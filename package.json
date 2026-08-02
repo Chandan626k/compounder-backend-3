@@ -1,0 +1,18 @@
+{
+  "name": "compounder-dna-backend",
+  "version": "1.0.0",
+  "description": "Secure backend for Compounder DNA Engine — OpenAI key never exposed to browser",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "openai": "^4.47.1"
+  },
+  "devDependencies": {
+    "vercel": "^34.0.0"
+  }
+}

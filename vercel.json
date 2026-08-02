@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "functions": {
+    "api/analyze.js": {
+      "maxDuration": 60,
+      "memory": 256
+    },
+    "api/data.js": {
+      "maxDuration": 30,
+      "memory": 256
+    },
+    "api/health.js": {
+      "maxDuration": 5,
+      "memory": 128
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin",  "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "POST, GET, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, X-Request-ID" },
+        { "key": "X-Content-Type-Options",       "value": "nosniff" },
+        { "key": "X-Frame-Options",              "value": "DENY" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment — NEVER commit API keys
+.env
+.env.local
+.env.*.local
+
+# Vercel
+.vercel/
+.vercel_cache/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
